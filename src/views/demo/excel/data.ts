@@ -39,10 +39,10 @@ export const data: any[] = (() => {
   const arr: any[] = [];
   for (let index = 0; index < 40; index++) {
     arr.push({
-      id: `${index}`,
-      name: `${index} John Brown`,
+      id: `id ${index}`,
+      name: `John Brown ${index}`,
       age: `${index + 10}`,
-      no: `${index}98678`,
+      no: `${index}986`,
       address: 'New York No. 1 Lake ParkNew York No. 1 Lake Park',
       beginTime: new Date().toLocaleString(),
       endTime: new Date().toLocaleString(),
