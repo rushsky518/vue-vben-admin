@@ -20,11 +20,14 @@ export const columns: BasicColumn[] = [
 
 export const data: any[] = (() => {
   const arr: any[] = [];
+  const tmonth = new Date('2023-02-15T10:30:00');
+  const options = { year: 'numeric', month: 'long' };
   for (let index = 0; index < 12; index++) {
+    tmonth.setMonth(index);
     arr.push({
       id: 'zhang',
       revenue: `${index + 8000}`,
-      month: new Date().toLocaleString(),
+      month: tmonth.toLocaleDateString('default', options),
     });
   }
   return arr;
